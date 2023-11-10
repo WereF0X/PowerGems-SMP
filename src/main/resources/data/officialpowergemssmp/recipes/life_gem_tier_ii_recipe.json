@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "officialpowergemssmp:life_gem"
+  },
+  "addition": {
+    "item": "officialpowergemssmp:gem_upgrader"
+  },
+  "result": {
+    "item": "officialpowergemssmp:life_gem_tier_ii"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 224,
+    "height": 70,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_revive_a_player",
+          "text": {
+            "fixedValue": "REVIVE A PLAYER"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 172,
+          "y": 92
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_random_revive",
+          "text": "Revive Last",
+          "onClick": {
+            "name": "Unban"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 117,
+          "y": 111
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_revive_all",
+          "text": "Revive All",
+          "onClick": {
+            "name": "UnbanAll"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 225,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cost_5_netherite_ingots",
+          "text": {
+            "fixedValue": "Price: 1 Sea Heart"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 225,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1_gem_crystal",
+          "text": {
+            "fixedValue": "+ 1 Gem Crystal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 241,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

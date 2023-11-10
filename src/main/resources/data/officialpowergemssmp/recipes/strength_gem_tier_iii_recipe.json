@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "officialpowergemssmp:strength_tier_ii"
+  },
+  "addition": {
+    "item": "officialpowergemssmp:gem_upgrader_tier_ii"
+  },
+  "result": {
+    "item": "officialpowergemssmp:strength_gem_tier_iii"
+  }
+}

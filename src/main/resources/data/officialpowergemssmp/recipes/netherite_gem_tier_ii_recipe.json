@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "officialpowergemssmp:netherite_gem"
+  },
+  "addition": {
+    "item": "officialpowergemssmp:gem_upgrader"
+  },
+  "result": {
+    "item": "officialpowergemssmp:netherite_gem_tier_ii"
+  }
+}

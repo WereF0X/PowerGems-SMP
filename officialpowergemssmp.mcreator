@@ -1,0 +1,2190 @@
+{
+  "mod_elements": [
+    {
+      "name": "PowerGems",
+      "type": "tab",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_gems",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FireGem",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/fire_gem.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/FireGemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FireGemRightclicked",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/FireGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GemCrystal",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/gem_crystal.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/GemCrystalItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LifeGolem",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_golem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/entity/LifeGolemEntity.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/client/renderer/LifeGolemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "LifeGem",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/life_gem.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/LifeGemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LifeGemRightclicked",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/LifeGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeGolemOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_golem_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/LifeGolemOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeGolemOnInitialEntitySpawnTAME",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_golem_on_initial_entity_spawn_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/LifeGolemOnInitialEntitySpawnTAMEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EarthGemRightclicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/EarthGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EarthGem",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/earth_gem.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/EarthGemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StrengthGemRightclicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/StrengthGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrengthGem",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/StrengthGemItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/strength_gem.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGemSword",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/NetheriteGemSwordItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/netherite_gem_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGemRightclicked",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/NetheriteGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGem",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/NetheriteGemItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/netherite_gem.json"
+        ]
+      }
+    },
+    {
+      "name": "SculkGem",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_gem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/sculk_gem.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/SculkGemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Sculk",
+      "type": "armor",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/sculk_chestplate.json",
+          "src/main/resources/assets/officialpowergemssmp/models/item/sculk_boots.json",
+          "src/main/resources/assets/officialpowergemssmp/models/item/sculk_leggings.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/SculkItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/sculk_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "SculkGemRightclicked",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_gem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/SculkGemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DropCrystalOnkill",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_crystal_onkill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/DropCrystalOnkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BanPlayer",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/BanPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TellLives",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tell_lives",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/TellLivesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RandomGems",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_gems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/RandomGemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RandomGemsCommand",
+      "type": "command",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_gems_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/RandomGemsCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SetRandomLimit",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_random_limit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/SetRandomLimitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GemUpgrader",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_upgrader",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/gem_upgrader.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/GemUpgraderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GemUpgraderTierII",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_upgrader_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/GemUpgraderTierIIItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/gem_upgrader_tier_ii.json"
+        ]
+      }
+    },
+    {
+      "name": "FireGemTierII",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_gem_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/FireGemTierIIItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/fire_gem_tier_ii.json"
+        ]
+      }
+    },
+    {
+      "name": "FireLauncherRangedItemUsed",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_launcher_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/FireLauncherRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireLauncherProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_launcher_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/FireLauncherProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireLauncher",
+      "type": "rangeditem",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_launcher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/entity/FireLauncherEntity.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/FireLauncherItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/fire_launcher.json"
+        ]
+      }
+    },
+    {
+      "name": "FireGemTierIIRightclicked",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_gem_tier_ii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/FireGemTierIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeGemTierII",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_gem_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/LifeGemTierIIItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/life_gem_tier_ii.json"
+        ]
+      }
+    },
+    {
+      "name": "LifeGemTierIIRightclicked",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_gem_tier_ii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/LifeGemTierIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EarthGemTierII",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gem_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/earth_gem_tier_ii.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/EarthGemTierIIItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EarthDart",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_dart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/earth_dart.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/EarthDartItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EarthBowRangedItemUsed",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_bow_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/EarthBowRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EarthBowProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_bow_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/EarthBowProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EarthBow",
+      "type": "rangeditem",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_bow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/entity/EarthBowEntity.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/EarthBowItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/earth_bow.json"
+        ]
+      }
+    },
+    {
+      "name": "EarthGemTierIIRightclicked",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gem_tier_ii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/EarthGemTierIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrengthTierII",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/strength_tier_ii.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/StrengthTierIIItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StrengthTierIIRightclicked",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_tier_ii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/StrengthTierIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGemTierII",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem_tier_ii",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/netherite_gem_tier_ii.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/NetheriteGemTierIIItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGemTierIIRightclicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem_tier_ii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/NetheriteGemTierIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrengthGemTierIII",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem_tier_iii",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/strength_gem_tier_iii.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/StrengthGemTierIIIItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StrengthGemTierIIIRightclicked",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem_tier_iii_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/StrengthGemTierIIIRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireGemTierIIRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_gem_tier_ii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/fire_gem_tier_ii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GemsUpgradeOnKill",
+      "type": "gamerule",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gems_upgrade_on_kill",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "UpgradeGemOnKill",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_gem_on_kill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/UpgradeGemOnKillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeGemTierIIRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_gem_tier_ii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/life_gem_tier_ii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EarthGemTierIIRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gem_tier_ii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/earth_gem_tier_ii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StrengthGemTierIIRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem_tier_ii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/strength_gem_tier_ii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteGemTierIIRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_gem_tier_ii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/netherite_gem_tier_ii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StrengthGemTierIIIRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_gem_tier_iii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/strength_gem_tier_iii_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GemCrystalRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_crystal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/gem_crystal_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TierUpgraderRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_upgrader_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/tier_upgrader_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TierUpgraderTierIIIRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_upgrader_tier_iii_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/recipes/brewing/TierUpgraderTierIIIRecipeBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "NoDropping",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_dropping",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/NoDroppingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoPickingUp",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_picking_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/NoPickingUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NoUsing",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_using_arrows",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/NoUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveGemBackAfterDeath",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_gem_back_after_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/GiveGemBackAfterDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unban",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unban",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/UnbanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReviveTotem",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive_totem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/item/ReviveTotemItem.java",
+          "src/main/resources/assets/officialpowergemssmp/models/item/revive_totem.json"
+        ]
+      }
+    },
+    {
+      "name": "ReviveGUI",
+      "type": "gui",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/world/inventory/ReviveGUIMenu.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/network/ReviveGUIButtonMessage.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/client/gui/ReviveGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ReviveTotemRightclicked",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive_totem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/ReviveTotemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UnbanAll",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unban_all",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/UnbanAllProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResetLives",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_lives",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/ResetLivesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GemTraderGUI",
+      "type": "gui",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_trader_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/network/GemTraderGUIButtonMessage.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/world/inventory/GemTraderGUIMenu.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/client/gui/GemTraderGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "GemTraderRightclicked",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_trader_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/GemTraderRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GemTrader",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_trader",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/officialpowergemssmp/models/item/gem_trader.json",
+          "src/main/java/net/mcreator/officialpowergemssmp/item/GemTraderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TradeGems",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_gems",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/TradeGemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReviveTotemRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive_totem_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/revive_totem_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GemTraderRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gem_trader_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/officialpowergemssmp/recipes/gem_trader_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Recipes",
+      "type": "gui",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/world/inventory/RecipesMenu.java",
+          "src/main/java/net/mcreator/officialpowergemssmp/client/gui/RecipesScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ShowRecipesOnKeyPressed",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_recipes_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/ShowRecipesOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowRecipes",
+      "type": "keybind",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_recipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/network/ShowRecipesMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipesCommand",
+      "type": "command",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/RecipesCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SendGem",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_gem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/SendGemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SendGemDEV",
+      "type": "command",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_gem_dev",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/SendGemDEVCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "FireLauncherProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_launcher_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/FireLauncherProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveIllegalItemOnJoin",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_illegal_item_on_join",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/RemoveIllegalItemOnJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TellLivesOnCommand",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tell_lives_on_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/TellLivesOnCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TellLivesCommand",
+      "type": "command",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tell_lives_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/TellLivesCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "RemoveItem",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/RemoveItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveGemBackOnCommand",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_gem_back_on_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/GiveGemBackOnCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveGemBackCommand",
+      "type": "command",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_gem_back_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/GiveGemBackCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "PurgeRealStart",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purge_real_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/PurgeRealStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgeStop",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purge_stop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/PurgeStopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgeStart",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/PurgeStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Start",
+      "type": "command",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/StartCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "StartPREVIEW",
+      "type": "command",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_preview",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/StartPREVIEWCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "StopPREVIEW",
+      "type": "command",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_preview",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/StopPREVIEWCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SendBannedPlayer",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_banned_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/procedures/SendBannedPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BANNED",
+      "type": "command",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banned",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/officialpowergemssmp/command/BANNEDCommand.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Lives",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "3.0"
+    },
+    {
+      "name": "RandomCommandLimit",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "FireGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "LifeGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "EarthGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "StrengthGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "NetheriteGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SculkGem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Banned",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.officialpowergemssmp.sculk_leggings": "Sculk Leggings",
+      "gui.officialpowergemssmp.revive_gui.label_cost_5_netherite_ingots": "Price: 1 Sea Heart",
+      "gui.officialpowergemssmp.revive_gui.button_random_revive": "Revive Last",
+      "item.officialpowergemssmp.revive_totem": "Revive Totem",
+      "gui.officialpowergemssmp.revive_gui.label_1_gem_crystal": "+ 1 Gem Crystal",
+      "item.officialpowergemssmp.gem_crystal": "Gem Crystal",
+      "item.officialpowergemssmp.sculk_chestplate": "Sculk Chestplate",
+      "entity.officialpowergemssmp.life_golem": "Life Golem",
+      "item.officialpowergemssmp.netherite_gem_tier_ii": "Netherite Gem",
+      "item.officialpowergemssmp.strength_gem_tier_iii": "Strength Gem",
+      "gui.officialpowergemssmp.gem_trader_gui.button_random_gem": "Random Gem",
+      "item.officialpowergemssmp.strength_gem": "Strength Gem",
+      "gamerule.gemsUpgradeOnKill.description": "Make Gems upgrade on kill",
+      "gui.officialpowergemssmp.revive_gui.label_revive_a_player": "REVIVE A PLAYER",
+      "item.officialpowergemssmp.sculk_helmet": "Sculk Helmet",
+      "gui.officialpowergemssmp.revive_gui.button_revive_all": "Revive All",
+      "item.officialpowergemssmp.life_gem_tier_ii": "Life Gem",
+      "gui.officialpowergemssmp.revive_gui.label_ingots": "ingots",
+      "item.officialpowergemssmp.sculk_gem": "Sculk Gem",
+      "item.officialpowergemssmp.fire_launcher": "Fire Launcher",
+      "item.officialpowergemssmp.fire_gem": "Fire Gem",
+      "item.officialpowergemssmp.netherite_gem": "Netherite Gem",
+      "item_group.officialpowergemssmp.power_gems": "PowerGems",
+      "item.officialpowergemssmp.netherite_gem_sword": "Netherite Gem Sword",
+      "item.officialpowergemssmp.gem_trader": "Gem Trader",
+      "item.officialpowergemssmp.sculk_boots": "Sculk Boots",
+      "item.officialpowergemssmp.gem_upgrader_tier_ii": "Gem Upgrader",
+      "item.officialpowergemssmp.life_gem": "Life Gem",
+      "item.officialpowergemssmp.earth_gem_tier_ii": "Earth Gem",
+      "item.officialpowergemssmp.fire_gem_tier_ii": "Fire Gem",
+      "gamerule.gemsUpgradeOnKill": "Gems Upgrade On Kill",
+      "gui.officialpowergemssmp.recipes.label_recipes": "Recipes",
+      "key.officialpowergemssmp.show_recipes": "Show Recipes",
+      "item.officialpowergemssmp.earth_bow": "Earth Bow",
+      "item.officialpowergemssmp.strength_tier_ii": "Strength Gem",
+      "item.officialpowergemssmp.earth_dart": "Earth Dart",
+      "item.officialpowergemssmp.gem_upgrader": "Gem Upgrader",
+      "item.officialpowergemssmp.earth_gem": "Earth Gem"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "officialpowergemssmp",
+    "modName": "OfficialPowerGemsSMP",
+    "version": "1.0.0",
+    "description": "Official PowerGems SMP Addons",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/xSz967Mcuq",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": true,
+    "modPicture": "7",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "The_WereF0X, PowerGems SMP",
+    "modElementsPackage": "net.mcreator.officialpowergemssmp",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

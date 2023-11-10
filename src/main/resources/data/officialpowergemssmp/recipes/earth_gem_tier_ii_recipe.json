@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "officialpowergemssmp:earth_gem"
+  },
+  "addition": {
+    "item": "officialpowergemssmp:gem_upgrader"
+  },
+  "result": {
+    "item": "officialpowergemssmp:earth_gem_tier_ii"
+  }
+}

@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="officialpowergemssmp"
+version="1.0.0"
+displayName="OfficialPowerGemsSMP"
+credits="The_WereF0X, PowerGems SMP"
+displayURL="https://discord.gg/xSz967Mcuq"
+logoFile="logo.png"
+authors="The_WereF0X"
+description="Official PowerGems SMP Addons"
+
+[[dependencies.officialpowergemssmp]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
